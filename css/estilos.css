@@ -304,6 +304,7 @@ margin: 0px auto;
         background-color: lightslategrey;
         margin-bottom: 0px;
     }
+}
 
     @media(min-width:1000px){
         .container-2{
@@ -327,5 +328,3 @@ margin: 0px auto;
         }
     
     }
-
-
