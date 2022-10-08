@@ -1,0 +1,36 @@
+header{
+    background-color: rgb(22, 126, 126);
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+
+    nav {
+
+        ul {
+            display: grid;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-between;
+            margin-right: auto;
+            margin-left: auto;
+
+            li{
+                list-style-type: none;
+                display: inline-block;
+                font-size: 40px;
+                padding-right: 3px;
+                padding-left: 10px;
+
+                a{
+                    text-decoration: none;
+                    color: beige;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    
+        
+                }
+    
+                }
+    
+        }
+    }
+}        

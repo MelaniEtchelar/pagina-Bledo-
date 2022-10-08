@@ -1,0 +1,283 @@
+@import "fuentes";
+@import "generales";
+@import "nav";
+@import "titulo";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 50px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+footer{
+    background-color: rgb(22, 126, 126);
+    margin-bottom: 0px;
+    padding: em;
+}
+
+
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    grid-area: main;
+}
+
+.imagenes{
+    grid-area: imagenes;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    
+
+}
+
+.icono{
+    width: 48px;
+    height: 48px;
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
+}
+
+.title h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+
+.container{
+        background-color: rgb(151, 184, 245);
+        margin-bottom: 1.5em;
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "imagenes"
+        "footer";
+    }
+
+    .container .imagenes{
+        grid-column: span 2;
+        background: dimgray;
+        background-color: rgb(22, 126, 126);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        gap: 35;
+        color:beige;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .content{
+        display: grid;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+.contraseña{
+    font-size: 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.usuario{
+
+    font-size: 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+display: block;
+margin: 0px auto;
+}
+
+.volvemos{
+    display: block;
+    margin: 0px auto;
+    }
+
+
+.titulo{
+    text-align: center;
+}
+
+.elegante{
+    width: 400px;
+    height: 300px;
+    border: 5px solid rgb(64, 103, 175);
+    margin-left: 50px;
+}
+.maniquies{
+    width: 400px;
+    height: 300px;
+    border: 5px solid rgb(64, 103, 175);
+}
+.verano{
+    width: 400px;
+    height: 300px;
+    border: 5px solid rgb(64, 103, 175);
+}
+
+
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+
+@media(min-width:600px){
+    .container{
+        display: grid;
+        background-color: silver;
+        width: 100%;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "imagenes imagenes"
+        "footer   footer";
+    }
+
+    body{
+        background-color: silver;
+        margin-top: 0px;
+    }
+
+
+
+}
+
+@media(min-width:1000px){
+    .container{
+        background-color:lightslategray;
+        width: 100%;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "imagenes imagenes imagenes"
+        "footer footer footer";
+    }
+
+    body{
+        background-color:lightslategray;
+    }
+
+    header, footer{
+        background-color: rgb(64, 73, 82);
+        margin-bottom: 0px;
+    }
+
+}
+
+@media(min-width:600px){
+    .container-2{
+        background-color: silver;
+        width: 100%;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer   footer";
+    }
+
+    body{
+        background-color: silver;
+        margin-top: 0px;
+    }
+
+    header, footer{
+        background-color: lightslategrey;
+        margin-bottom: 0px;
+    }
+}
+
+    @media(min-width:1000px){
+        .container-2{
+            background-color:lightslategray;
+            width: 100%;
+            margin: 0px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        }
+    
+        body{
+            background-color:lightslategray;
+        }
+    
+        header, footer{
+            background-color: rgb(64, 73, 82);
+            margin-bottom: 0px;
+        }
+    
+    }
