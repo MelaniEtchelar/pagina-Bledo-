@@ -147,8 +147,6 @@ img{
     .content{
         display: grid;
     }
-
-
     
 
 
@@ -196,6 +194,10 @@ margin: 0px auto;
     grid-template-areas: 1fr;
     justify-items: center;
     gap: 15px;
+}
+
+.formulario{
+    grid-area: formulario;
 }
 
 
